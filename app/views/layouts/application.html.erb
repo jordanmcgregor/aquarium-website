@@ -11,7 +11,18 @@
       gtag('config', 'UA-174171673-2');
     </script>
 
+    <% if @title %>
+    <title><%= @title %></title>
+    <% else %>
     <title>Aquarium Informer</title>
+    <% end %>
+    
+    <% if @meta_description %>
+    <meta name='description' content='<%= @meta_description %>'>
+    <% else %>
+    <meta name='description' content='Aquarium Informer'>
+    <% end %>
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
