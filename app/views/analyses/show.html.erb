@@ -1,0 +1,821 @@
+<html>
+<head>
+  <link rel='stylesheet' href='product-analysis.css'/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body id='analysis'>
+  <h1>
+    <%= @analysis.analysis_article_title %>
+  </h1>
+  <section class='martop100 margin-center'>
+    <div class='flex space-between'>
+      <div class='top-three shadow'>
+        <h3 class='best laurel-title-format round-border-top'>
+          <b>BEST</b> OVERALL
+        </h3>
+        <div class='product-info-container margin-center'>
+          <a href="<%= @analysis.affiliate_link1 %>">
+            <h4 class='top-three-title'>
+              <%= @analysis.title1 %>
+            </h4>
+          </a>
+          <a href="<%= @analysis.affiliate_link1 %>">
+            <div class='top-three-image' style='background-image: url("<%= @analysis.image_link1 %> ")'>
+            </div>
+          </a>
+          <div>
+            <p class='check featured-check'>
+              <%= @analysis.highlight1_1 %>
+            </p>
+            <p class='check featured-check'>
+              <%= @analysis.highlight1_2 %>
+            </p>
+            <p class='check featured-check'>
+              <%= @analysis.highlight1_3 %>
+            </p>
+          </div>
+          <div class='small-button-container'>
+            <a class='small-button' href='<%= @analysis.affiliate_link1 %>'>CLICK FOR PRICE
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class='top-three shadow'>
+        <h3 class='premium laurel-title-format round-border-top'>
+          <b>PREMIUM</b> CHOICE
+        </h3>
+        <div class='product-info-container margin-center'>
+          <a href="<%= @analysis.affiliate_link2 %>">
+            <h4 class='top-three-title'>
+              <%= @analysis.title2 %>
+            </h4>
+          </a>
+          <a>
+            <div class='top-three-image' style='background-image: url("<%= @analysis.image_link2 %> ")'>
+            </div>
+          </a>
+          <div>
+            <p class='check featured-check'>
+              <%= @analysis.highlight2_1 %>
+            </p>
+            <p class='check featured-check'>
+              <%= @analysis.highlight2_2 %>
+            </p>
+            <p class='check featured-check'>
+              <%= @analysis.highlight2_3 %>
+            </p>
+          </div>
+          <div class='small-button-container'>
+            <a class='small-button' href='<%= @analysis.affiliate_link2 %>'>CLICK FOR PRICE
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class='top-three shadow'>
+        <h3 class='great laurel-title-format round-border-top'>
+          <b>GREAT</b> VALUE
+        </h3>
+        <div class='product-info-container margin-center'>
+          <a href="<%= @analysis.affiliate_link3 %>">
+            <h4 class='top-three-title'>
+              <%= @analysis.title3 %>
+            </h4>
+          </a>
+          <a>
+            <div class='top-three-image' style='background-image: url("<%= @analysis.image_link3 %> ")'>
+            </div>
+          </a>
+          <div>
+            <p class='check featured-check'>
+              <%= @analysis.highlight3_1 %>
+            </p>
+            <p class='check featured-check'>
+              <%= @analysis.highlight3_2 %>
+            </p>
+            <p class='check featured-check'>
+              <%= @analysis.highlight3_3 %>
+            </p>
+          </div>
+          <div class='small-button-container'>
+            <a class='small-button' href='<%= @analysis.affiliate_link3 %>'>CLICK FOR PRICE
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class='martop100'>
+      <%= @analysis.introduction %>
+    </p>
+    <div class='martop100 toc-container'>
+      <p class='text-center'>Table of Contents</p>
+      <ul class="martop50 margin-center toc-list">
+        <li>
+          <a href="#product_one"><%= @analysis.analysis_article_title %></a>
+          <ul>
+            <li>
+              <a class='indent' href="#product_one">1. <%= @analysis.title1 %></a>
+            </li>
+            <li>
+              <a class='indent' href="#product_two">2. <%= @analysis.title2 %></a>
+            </li>
+            <li>
+              <a class='indent' href="#product_three">3. <%= @analysis.title3 %></a>
+            </li>
+            <li>
+              <a class='indent' href="#product_four">4. <%= @analysis.title4 %></a>
+            </li>
+            <li>
+              <a class='indent' href="#product_five">5. <%= @analysis.title5 %></a>
+            </li>
+            <li>
+              <a class='indent' href="#product_six">6. <%= @analysis.title6 %></a>
+            </li>
+            <li>
+              <a class='indent' href="#product_seven">7. <%= @analysis.title7 %></a>
+            </li>
+            <li>
+              <a class='indent' href="#product_eight">8. <%= @analysis.title8 %></a>
+            </li>
+            <li>
+              <a class='indent' href="#product_nine">9. <%= @analysis.title9 %></a>
+            </li>
+            <li>
+              <a class='indent' href="#product_ten">10. <%= @analysis.title10 %></a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#buyers_guide">Buyer's Guide</a>
+        </li>
+        <li>
+          <a href="#expert_tip">Expert Tip</a>
+        </li>
+        <li>
+          <a href="#did_you_know">Did You Know</a>
+        </li>
+        <li>
+          <a href="#conclusion">Conclusion</a>
+        </li>
+      </ul>
+    </div>
+    <div itemscope itemtype='http://schema.org/Product' class='martop100 shadow' id='product_one'>
+      <h5 class='best laurel-title-format'>
+        <b>BEST</b> OVERALL
+      </h5>
+      <div class='product-info-container margin-center padbottom50'>
+        <h2 itemprop='name' class='martop50'>
+          <%= @analysis.title1 %>
+        </h2>
+        <a href="<%= @analysis.affiliate_link1 %>">
+          <img itemprop='image' class='product-image margin-center martop50' src='<%= @analysis.image_link1 %> '/>
+        </a>
+        <div class='martop50 big-button-container'>
+          <a class='big-button' href="<%= @analysis.affiliate_link1 %>">
+            CLICK FOR PRICE
+          </a>
+        </div>
+        <a class='review-text text-center black_font' href='<%= @analysis.affiliate_link1 %>'>Read Customer Reviews Here »
+        </a>
+        <p itemprop='description' class='martop50'>
+          <%= @analysis.summary1 %>
+        </p>
+        <div class='flex'>
+          <div class='flex50 martop50'>
+            <p>
+              What We Like Most
+            </p>
+            <p class='check regular-check martop25'>
+              <%= @analysis.highlight1_1 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight1_2 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight1_3 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight1_4 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight1_5 %>
+            </p>
+          </div>
+          <div class='flex50 martop50'>
+            <p>
+              Our Synopsis:
+            </p>
+            <p class='martop25'>
+              <%= @analysis.synopsis1 %>
+            </p>
+            <div class="editor-rating">
+              <p class="rating-text martop25">Analyst Rating</p>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div itemscope itemtype='http://schema.org/Product' class='martop100 shadow' id='product_two'>
+      <h5 class='premium laurel-title-format'>
+        <b>PREMIUM</b> CHOICE
+      </h5>
+      <div class='product-info-container margin-center padbottom50'>
+        <h2 itemprop='name' class='martop50'>
+          <%= @analysis.title2 %>
+        </h2>
+        <a href='<%= @analysis.affiliate_link2 %>'>
+          <img itemprop='image' class='product-image margin-center martop50' src='<%= @analysis.image_link2 %>'/>
+        </a>
+        <div class='martop50 big-button-container'>
+          <a class='big-button' href='<%= @analysis.affiliate_link2 %>'>
+            CLICK FOR PRICE
+          </a>
+        </div>
+        <a class='review-text text-center black_font' href='<%= @analysis.affiliate_link2 %>'>Read Customer Reviews Here »
+        </a>
+        <p itemprop='description' class='martop50'>
+          <%= @analysis.summary2 %>
+        </p>
+        <div class='flex'>
+          <div class='flex50 martop50'>
+            <p>
+              What We Like Most
+            </p>
+            <p class='check regular-check martop25'>
+              <%= @analysis.highlight2_1 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight2_2 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight2_3 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight2_4 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight2_5 %>
+            </p>
+          </div>
+          <div class='flex50 martop50'>
+            <p>
+              Our Synopsis:
+            </p>
+            <p class='martop25'>
+              <%= @analysis.synopsis2 %>
+            </p>
+            <div class="editor-rating">
+              <p class="rating-text martop25">Analyst Rating</p>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div itemscope itemtype='http://schema.org/Product' class='martop100 shadow' id='product_three'>
+      <h5 class='great laurel-title-format'>
+        <b>GREAT</b> VALUE
+      </h5>
+      <div class='product-info-container margin-center padbottom50'>
+        <h2 itemprop='name' class='martop50'>
+          <%= @analysis.title3 %>
+        </h2>
+        <a href='<%= @analysis.affiliate_link3 %>'>
+          <img itemprop='image' class='product-image margin-center martop50' src='<%= @analysis.image_link3 %>'/>
+        </a>
+        <div class='martop50 big-button-container'>
+          <a class='big-button' href='<%= @analysis.affiliate_link3 %>'>
+            CLICK FOR PRICE
+          </a>
+        </div>
+        <a class='review-text text-center black_font' href='<%= @analysis.affiliate_link3 %>'>Read Customer Reviews Here »
+        </a>
+        <p itemprop='description' class='martop50'>
+          <%= @analysis.summary3 %>
+        </p>
+        <div class='flex'>
+          <div class='flex50 martop50'>
+            <p>
+              What We Like Most
+            </p>
+            <p class='check regular-check martop25'>
+              <%= @analysis.highlight3_1 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight3_2 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight3_3 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight3_4 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight3_5 %>
+            </p>
+          </div>
+          <div class='flex50 martop50'>
+            <p>
+              Our Synopsis:
+            </p>
+            <p class='martop25'>
+              <%= @analysis.synopsis3 %>
+            </p>
+            <div class="editor-rating">
+              <p class="rating-text martop25">Analyst Rating</p>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Regular products -->
+    <div itemscope itemtype='http://schema.org/Product' class='martop100 shadow' id='product_four'>
+      <h3 class='product-number'>
+        4
+      </h3>
+      <div class='product-info-container margin-center padbottom50'>
+        <h2 itemprop='name' class='martop50'>
+          <%= @analysis.title4 %>
+        </h2>
+        <a href='<%= @analysis.affiliate_link4 %>'>
+          <img itemprop='image' class='product-image margin-center martop50' src='<%= @analysis.image_link4 %>'/>
+        </a>
+        <div class='martop50 big-button-container'>
+          <a class='big-button' href='<%= @analysis.affiliate_link4 %>'>
+            CLICK FOR PRICE
+          </a>
+        </div>
+        <a class='review-text text-center black_font' href='<%= @analysis.affiliate_link4 %>'>Read Customer Reviews Here »
+        </a>
+        <p itemprop='description' class='martop50'>
+          <%= @analysis.summary4 %>
+        </p>
+        <div class='flex'>
+          <div class='flex50 martop50'>
+            <p>
+              What We Like Most
+            </p>
+            <p class='check regular-check martop25'>
+              <%= @analysis.highlight4_1 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight4_2 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight4_3 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight4_4 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight4_5 %>
+            </p>
+          </div>
+          <div class='flex50 martop50'>
+            <p>
+              Our Synopsis:
+            </p>
+            <p class='martop25'>
+              <%= @analysis.synopsis4 %>
+            </p>
+            <div class="editor-rating">
+              <p class="rating-text martop25">Analyst Rating</p>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div itemscope itemtype='http://schema.org/Product' class='martop100 shadow' id='product_five'>
+      <h3 class='product-number'>
+        5
+      </h3>
+      <div class='product-info-container margin-center padbottom50'>
+        <h2 itemprop='name' class='martop50'>
+          <%= @analysis.title5 %>
+        </h2>
+        <a href='<%= @analysis.affiliate_link5 %>'>
+          <img itemprop='image' class='product-image margin-center martop50' src='<%= @analysis.image_link5 %>'/>
+        </a>
+        <div class='martop50 big-button-container'>
+          <a class='big-button' href='<%= @analysis.affiliate_link5 %>'>
+            CLICK FOR PRICE
+          </a>
+        </div>
+        <a class='review-text text-center black_font' href='<%= @analysis.affiliate_link5 %>'>Read Customer Reviews Here »
+        </a>
+        <p itemprop='description' class='martop50'>
+          <%= @analysis.summary5 %>
+        </p>
+        <div class='flex'>
+          <div class='flex50 martop50'>
+            <p>
+              What We Like Most
+            </p>
+            <p class='check regular-check martop25'>
+              <%= @analysis.highlight5_1 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight5_2 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight5_3 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight5_4 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight5_5 %>
+            </p>
+          </div>
+          <div class='flex50 martop50'>
+            <p>
+              Our Synopsis:
+            </p>
+            <p class='martop25'>
+              <%= @analysis.synopsis5 %>
+            </p>
+            <div class="editor-rating">
+              <p class="rating-text martop25">Analyst Rating</p>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div itemscope itemtype='http://schema.org/Product' class='martop100 shadow' id='product_six'>
+      <h3 class='product-number'>
+        6
+      </h3>
+      <div class='product-info-container margin-center padbottom50'>
+        <h2 itemprop='name' class='martop50'>
+          <%= @analysis.title6 %>
+        </h2>
+        <a href='<%= @analysis.affiliate_link6 %>'>
+          <img itemprop='image' class='product-image margin-center martop50' src='<%= @analysis.image_link6 %>'/>
+        </a>
+        <div class='martop50 big-button-container'>
+          <a class='big-button' href='<%= @analysis.affiliate_link6 %>'>
+            CLICK FOR PRICE
+          </a>
+        </div>
+        <a class='review-text text-center black_font' href='<%= @analysis.affiliate_link6 %>'>Read Customer Reviews Here »
+        </a>
+        <p itemprop='description' class='martop50'>
+          <%= @analysis.summary6 %>
+        </p>
+        <div class='flex'>
+          <div class='flex50 martop50'>
+            <p>
+              What We Like Most
+            </p>
+            <p class='check regular-check martop25'>
+              <%= @analysis.highlight6_1 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight6_2 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight6_3 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight6_4 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight6_5 %>
+            </p>
+          </div>
+          <div class='flex50 martop50'>
+            <p>
+              Our Synopsis:
+            </p>
+            <p class='martop25'>
+              <%= @analysis.synopsis6 %>
+            </p>
+            <div class="editor-rating">
+              <p class="rating-text martop25">Analyst Rating</p>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div itemscope itemtype='http://schema.org/Product' class='martop100 shadow' id='product_seven'>
+      <h3 class='product-number'>
+        7
+      </h3>
+      <div class='product-info-container margin-center padbottom50'>
+        <h2 itemprop='name' class='martop50'>
+          <%= @analysis.title7 %>
+        </h2>
+        <a href='<%= @analysis.affiliate_link7 %>'>
+          <img itemprop='image' class='product-image margin-center martop50' src='<%= @analysis.image_link7 %>'/>
+        </a>
+        <div class='martop50 big-button-container'>
+          <a class='big-button' href='<%= @analysis.affiliate_link7 %>'>
+            CLICK FOR PRICE
+          </a>
+        </div>
+        <a class='review-text text-center black_font' href='<%= @analysis.affiliate_link7 %>'>Read Customer Reviews Here »
+        </a>
+        <p itemprop='description' class='martop50'>
+          <%= @analysis.summary7 %>
+        </p>
+        <div class='flex'>
+          <div class='flex50 martop50'>
+            <p>
+              What We Like Most
+            </p>
+            <p class='check regular-check martop25'>
+              <%= @analysis.highlight7_1 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight7_2 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight7_3 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight7_4 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight7_5 %>
+            </p>
+          </div>
+          <div class='flex50 martop50'>
+            <p>
+              Our Synopsis:
+            </p>
+            <p class='martop25'>
+              <%= @analysis.synopsis7 %>
+            </p>
+            <div class="editor-rating">
+              <p class="rating-text martop25">Analyst Rating</p>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div itemscope itemtype='http://schema.org/Product' class='martop100 shadow' id='product_eight'>
+      <h3 class='product-number'>
+        8
+      </h3>
+      <div class='product-info-container margin-center padbottom50'>
+        <h2 itemprop='name' class='martop50'>
+          <%= @analysis.title8 %>
+        </h2>
+        <a href='<%= @analysis.affiliate_link8 %>'>
+          <img itemprop='image' class='product-image margin-center martop50' src='<%= @analysis.image_link8 %>'/>
+        </a>
+        <div class='martop50 big-button-container'>
+          <a class='big-button' href='<%= @analysis.affiliate_link8 %>'>
+            CLICK FOR PRICE
+          </a>
+        </div>
+        <a class='review-text text-center black_font' href='<%= @analysis.affiliate_link8 %>'>Read Customer Reviews Here »
+        </a>
+        <p itemprop='description' class='martop50'>
+          <%= @analysis.summary8 %>
+        </p>
+        <div class='flex'>
+          <div class='flex50 martop50'>
+            <p>
+              What We Like Most
+            </p>
+            <p class='check regular-check martop25'>
+              <%= @analysis.highlight8_1 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight8_2 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight8_3 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight8_4 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight8_5 %>
+            </p>
+          </div>
+          <div class='flex50 martop50'>
+            <p>
+              Our Synopsis:
+            </p>
+            <p class='martop25'>
+              <%= @analysis.synopsis8 %>
+            </p>
+            <div class="editor-rating">
+              <p class="rating-text martop25">Analyst Rating</p>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div itemscope itemtype='http://schema.org/Product' class='martop100 shadow' id='product_nine'>
+      <h3 class='product-number'>
+        9
+      </h3>
+      <div class='product-info-container margin-center padbottom50'>
+        <h2 itemprop='name' class='martop50'>
+          <%= @analysis.title9 %>
+        </h2>
+        <a href='<%= @analysis.affiliate_link9 %>'>
+          <img itemprop='image' class='product-image margin-center martop50' src='<%= @analysis.image_link9 %>'/>
+        </a>
+        <div class='martop50 big-button-container'>
+          <a class='big-button' href='<%= @analysis.affiliate_link9 %>'>
+            CLICK FOR PRICE
+          </a>
+        </div>
+        <a class='review-text text-center black_font' href='<%= @analysis.affiliate_link9 %>'>Read Customer Reviews Here »
+        </a>
+        <p itemprop='description' class='martop50'>
+          <%= @analysis.summary9 %>
+        </p>
+        <div class='flex'>
+          <div class='flex50 martop50'>
+            <p>
+              What We Like Most
+            </p>
+            <p class='check regular-check martop25'>
+              <%= @analysis.highlight9_1 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight9_2 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight9_3 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight9_4 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight9_5 %>
+            </p>
+          </div>
+          <div class='flex50 martop50'>
+            <p>
+              Our Synopsis:
+            </p>
+            <p class='martop25'>
+              <%= @analysis.synopsis9 %>
+            </p>
+            <div class="editor-rating">
+              <p class="rating-text martop25">Analyst Rating</p>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div itemscope itemtype='http://schema.org/Product' class='martop100 shadow' id='product_ten'>
+      <h3 class='product-number'>
+        10
+      </h3>
+      <div class='product-info-container margin-center padbottom50'>
+        <h2 itemprop='name' class='martop50'>
+          <%= @analysis.title10 %>
+        </h2>
+        <a href='<%= @analysis.affiliate_link10 %>'>
+          <img itemprop='image' class='product-image margin-center martop50' src='<%= @analysis.image_link10 %>'/>
+        </a>
+        <div class='martop50 big-button-container'>
+          <a class='big-button' href='<%= @analysis.affiliate_link10 %>'>
+            CLICK FOR PRICE
+          </a>
+        </div>
+        <a class='review-text text-center black_font' href='<%= @analysis.affiliate_link10 %>'>Read Customer Reviews Here »
+        </a>
+        <p itemprop='description' class='martop50'>
+          <%= @analysis.summary10 %>
+        </p>
+        <div class='flex'>
+          <div class='flex50 martop50'>
+            <p>
+              What We Like Most
+            </p>
+            <p class='check regular-check martop25'>
+              <%= @analysis.highlight10_1 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight10_2 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight10_3 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight10_4 %>
+            </p>
+            <p class='check regular-check'>
+              <%= @analysis.highlight10_5 %>
+            </p>
+          </div>
+          <div class='flex50 martop50'>
+            <p>
+              Our Synopsis:
+            </p>
+            <p class='martop25'>
+              <%= @analysis.synopsis10 %>
+            </p>
+            <div class="editor-rating">
+              <p class="rating-text martop25">Analyst Rating</p>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Buyer's Guide -->
+    <div class='martop100'>
+      <h6 id='buyers_guide'>
+        Buyer's Guide
+      </h6>
+      <p>
+        <%= @analysis.buyers_guide %>
+      </p>
+      <% @analysis.factors.each do |factor| %>
+      <div class='martop50'>
+        <h6>
+          <%= factor.title %>
+        </h6>
+        <p>
+          <%= factor.body %>
+        </p>
+      </div>
+      <% end %>
+      <!-- Most asked questions -->
+      <div itemscope itemtype='http://schema.org/FAQPage'>
+        <% @analysis.questions.each do |question| %>
+          <div class='martop50' itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+            <h6 itemprop='name'>
+              <%= question.question %>
+            </h6>
+            <div itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer'>
+              <p itemprop='text'>
+                <%= question.answer %>
+              </p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <h6 class='martop50' id='expert_tip'>
+      Expert tip
+    </h6>
+    <p>
+      <%= @analysis.expert_tip %>
+    </p>
+    <h6 class='martop50' id='did_you_know'>
+      Did you know
+    </h6>
+    <p>
+      <%= @analysis.did_you_know %>
+    </p>
+    <h6 class='martop50' id='conclusion'>
+      Conclusion
+    </h6>
+    <p>
+      <%= @analysis.conclusion %>
+    </p>
+  </section>
+</body>
+</html>

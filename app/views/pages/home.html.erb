@@ -1,0 +1,35 @@
+<html>
+<head>
+  <link rel='stylesheet' href='home.css'/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body id='home'>
+  <div class="above-fold">
+    <h1 class='text-center margin-center'>
+      Remove all risk when buying aquarium products
+    </h1>
+    <div class="small-button-container">
+      <a class='small-button' href="#analysis_library">VIEW PRODUCT ANALYSIS LIBRARY</a>
+    </div>
+  </div>
+  <section id='analysis_library' class='margin-center'>
+    <h2 class='text-center'>
+      Product Analysis Articles
+    </h2>
+    <div class="article-container flex flex-wrap flex-between">
+      <% @analyses.each do |analysis| %>
+        <a class='article marbot50 margin-center' href="/analyses/<%= analysis.friendly_id %>">
+          <div class="">
+            <img src="<%= analysis.analysis_article_image %>" alt="">
+            <h3 class='text-center'>
+              <%= analysis.analysis_article_title %>
+            </h3>
+          </div>
+        </a>
+      <% end %>
+    </div>
+  </section>
+</body>

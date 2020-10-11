@@ -1,0 +1,261 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Analyses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Seo title</th>
+      <th>Seo meta description</th>
+      <th>Analysis article image</th>
+      <th>Analysis article title</th>
+      <th>Introduction</th>
+      <th>Title1</th>
+      <th>Image link1</th>
+      <th>Affiliate link1</th>
+      <th>Summary1</th>
+      <th>Highlight1 1 short</th>
+      <th>Highlight1 2 short</th>
+      <th>Highlight1 3 short</th>
+      <th>Highlight1 1</th>
+      <th>Highlight1 2</th>
+      <th>Highlight1 3</th>
+      <th>Highlight1 4</th>
+      <th>Highlight1 5</th>
+      <th>Synopsis1</th>
+      <th>Title2</th>
+      <th>Image link2</th>
+      <th>Affiliate link2</th>
+      <th>Summary2</th>
+      <th>Highlight2 1 short</th>
+      <th>Highlight2 2 short</th>
+      <th>Highlight2 3 short</th>
+      <th>Highlight2 1</th>
+      <th>Highlight2 2</th>
+      <th>Highlight2 3</th>
+      <th>Highlight2 4</th>
+      <th>Highlight2 5</th>
+      <th>Synopsis2</th>
+      <th>Title3</th>
+      <th>Image link3</th>
+      <th>Affiliate link3</th>
+      <th>Summary3</th>
+      <th>Highlight3 1 short</th>
+      <th>Highlight3 2 short</th>
+      <th>Highlight3 3 short</th>
+      <th>Highlight3 1</th>
+      <th>Highlight3 2</th>
+      <th>Highlight3 3</th>
+      <th>Highlight3 4</th>
+      <th>Highlight3 5</th>
+      <th>Synopsis3</th>
+      <th>Title4</th>
+      <th>Image link4</th>
+      <th>Affiliate link4</th>
+      <th>Summary4</th>
+      <th>Highlight4 1</th>
+      <th>Highlight4 2</th>
+      <th>Highlight4 3</th>
+      <th>Highlight4 4</th>
+      <th>Highlight4 5</th>
+      <th>Synopsis4</th>
+      <th>Title5</th>
+      <th>Image link5</th>
+      <th>Affiliate link5</th>
+      <th>Summary5</th>
+      <th>Highlight5 1</th>
+      <th>Highlight5 2</th>
+      <th>Highlight5 3</th>
+      <th>Highlight5 4</th>
+      <th>Highlight5 5</th>
+      <th>Synopsis5</th>
+      <th>Title6</th>
+      <th>Image link6</th>
+      <th>Affiliate link6</th>
+      <th>Summary6</th>
+      <th>Highlight6 1</th>
+      <th>Highlight6 2</th>
+      <th>Highlight6 3</th>
+      <th>Highlight6 4</th>
+      <th>Highlight6 5</th>
+      <th>Synopsis6</th>
+      <th>Title7</th>
+      <th>Image link7</th>
+      <th>Affiliate link7</th>
+      <th>Summary7</th>
+      <th>Highlight7 1</th>
+      <th>Highlight7 2</th>
+      <th>Highlight7 3</th>
+      <th>Highlight7 4</th>
+      <th>Highlight7 5</th>
+      <th>Synopsis7</th>
+      <th>Title8</th>
+      <th>Image link8</th>
+      <th>Affiliate link8</th>
+      <th>Summary8</th>
+      <th>Highlight8 1</th>
+      <th>Highlight8 2</th>
+      <th>Highlight8 3</th>
+      <th>Highlight8 4</th>
+      <th>Highlight8 5</th>
+      <th>Synopsis8</th>
+      <th>Title9</th>
+      <th>Image link9</th>
+      <th>Affiliate link9</th>
+      <th>Summary9</th>
+      <th>Highlight9 1</th>
+      <th>Highlight9 2</th>
+      <th>Highlight9 3</th>
+      <th>Highlight9 4</th>
+      <th>Highlight9 5</th>
+      <th>Synopsis9</th>
+      <th>Title10</th>
+      <th>Image link10</th>
+      <th>Affiliate link10</th>
+      <th>Summary10</th>
+      <th>Highlight10 1</th>
+      <th>Highlight10 2</th>
+      <th>Highlight10 3</th>
+      <th>Highlight10 4</th>
+      <th>Highlight10 5</th>
+      <th>Synopsis10</th>
+      <th>Buyers guide</th>
+      <th>Expert tip</th>
+      <th>Did you know</th>
+      <th>Conclusion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @analyses.each do |analysis| %>
+      <tr>
+        <td><%= analysis.seo_title %></td>
+        <td><%= analysis.seo_meta_description %></td>
+        <td><%= analysis.analysis_article_image %></td>
+        <td><%= analysis.analysis_article_title %></td>
+        <td><%= analysis.introduction %></td>
+        <td><%= analysis.title1 %></td>
+        <td><%= analysis.image_link1 %></td>
+        <td><%= analysis.affiliate_link1 %></td>
+        <td><%= analysis.summary1 %></td>
+        <td><%= analysis.highlight1_1_short %></td>
+        <td><%= analysis.highlight1_2_short %></td>
+        <td><%= analysis.highlight1_3_short %></td>
+        <td><%= analysis.highlight1_1 %></td>
+        <td><%= analysis.highlight1_2 %></td>
+        <td><%= analysis.highlight1_3 %></td>
+        <td><%= analysis.highlight1_4 %></td>
+        <td><%= analysis.highlight1_5 %></td>
+        <td><%= analysis.synopsis1 %></td>
+        <td><%= analysis.title2 %></td>
+        <td><%= analysis.image_link2 %></td>
+        <td><%= analysis.affiliate_link2 %></td>
+        <td><%= analysis.summary2 %></td>
+        <td><%= analysis.highlight2_1_short %></td>
+        <td><%= analysis.highlight2_2_short %></td>
+        <td><%= analysis.highlight2_3_short %></td>
+        <td><%= analysis.highlight2_1 %></td>
+        <td><%= analysis.highlight2_2 %></td>
+        <td><%= analysis.highlight2_3 %></td>
+        <td><%= analysis.highlight2_4 %></td>
+        <td><%= analysis.highlight2_5 %></td>
+        <td><%= analysis.synopsis2 %></td>
+        <td><%= analysis.title3 %></td>
+        <td><%= analysis.image_link3 %></td>
+        <td><%= analysis.affiliate_link3 %></td>
+        <td><%= analysis.summary3 %></td>
+        <td><%= analysis.highlight3_1_short %></td>
+        <td><%= analysis.highlight3_2_short %></td>
+        <td><%= analysis.highlight3_3_short %></td>
+        <td><%= analysis.highlight3_1 %></td>
+        <td><%= analysis.highlight3_2 %></td>
+        <td><%= analysis.highlight3_3 %></td>
+        <td><%= analysis.highlight3_4 %></td>
+        <td><%= analysis.highlight3_5 %></td>
+        <td><%= analysis.synopsis3 %></td>
+        <td><%= analysis.title4 %></td>
+        <td><%= analysis.image_link4 %></td>
+        <td><%= analysis.affiliate_link4 %></td>
+        <td><%= analysis.summary4 %></td>
+        <td><%= analysis.highlight4_1 %></td>
+        <td><%= analysis.highlight4_2 %></td>
+        <td><%= analysis.highlight4_3 %></td>
+        <td><%= analysis.highlight4_4 %></td>
+        <td><%= analysis.highlight4_5 %></td>
+        <td><%= analysis.synopsis4 %></td>
+        <td><%= analysis.title5 %></td>
+        <td><%= analysis.image_link5 %></td>
+        <td><%= analysis.affiliate_link5 %></td>
+        <td><%= analysis.summary5 %></td>
+        <td><%= analysis.highlight5_1 %></td>
+        <td><%= analysis.highlight5_2 %></td>
+        <td><%= analysis.highlight5_3 %></td>
+        <td><%= analysis.highlight5_4 %></td>
+        <td><%= analysis.highlight5_5 %></td>
+        <td><%= analysis.synopsis5 %></td>
+        <td><%= analysis.title6 %></td>
+        <td><%= analysis.image_link6 %></td>
+        <td><%= analysis.affiliate_link6 %></td>
+        <td><%= analysis.summary6 %></td>
+        <td><%= analysis.highlight6_1 %></td>
+        <td><%= analysis.highlight6_2 %></td>
+        <td><%= analysis.highlight6_3 %></td>
+        <td><%= analysis.highlight6_4 %></td>
+        <td><%= analysis.highlight6_5 %></td>
+        <td><%= analysis.synopsis6 %></td>
+        <td><%= analysis.title7 %></td>
+        <td><%= analysis.image_link7 %></td>
+        <td><%= analysis.affiliate_link7 %></td>
+        <td><%= analysis.summary7 %></td>
+        <td><%= analysis.highlight7_1 %></td>
+        <td><%= analysis.highlight7_2 %></td>
+        <td><%= analysis.highlight7_3 %></td>
+        <td><%= analysis.highlight7_4 %></td>
+        <td><%= analysis.highlight7_5 %></td>
+        <td><%= analysis.synopsis7 %></td>
+        <td><%= analysis.title8 %></td>
+        <td><%= analysis.image_link8 %></td>
+        <td><%= analysis.affiliate_link8 %></td>
+        <td><%= analysis.summary8 %></td>
+        <td><%= analysis.highlight8_1 %></td>
+        <td><%= analysis.highlight8_2 %></td>
+        <td><%= analysis.highlight8_3 %></td>
+        <td><%= analysis.highlight8_4 %></td>
+        <td><%= analysis.highlight8_5 %></td>
+        <td><%= analysis.synopsis8 %></td>
+        <td><%= analysis.title9 %></td>
+        <td><%= analysis.image_link9 %></td>
+        <td><%= analysis.affiliate_link9 %></td>
+        <td><%= analysis.summary9 %></td>
+        <td><%= analysis.highlight9_1 %></td>
+        <td><%= analysis.highlight9_2 %></td>
+        <td><%= analysis.highlight9_3 %></td>
+        <td><%= analysis.highlight9_4 %></td>
+        <td><%= analysis.highlight9_5 %></td>
+        <td><%= analysis.synopsis9 %></td>
+        <td><%= analysis.title10 %></td>
+        <td><%= analysis.image_link10 %></td>
+        <td><%= analysis.affiliate_link10 %></td>
+        <td><%= analysis.summary10 %></td>
+        <td><%= analysis.highlight10_1 %></td>
+        <td><%= analysis.highlight10_2 %></td>
+        <td><%= analysis.highlight10_3 %></td>
+        <td><%= analysis.highlight10_4 %></td>
+        <td><%= analysis.highlight10_5 %></td>
+        <td><%= analysis.synopsis10 %></td>
+        <td><%= analysis.buyers_guide %></td>
+        <td><%= analysis.expert_tip %></td>
+        <td><%= analysis.did_you_know %></td>
+        <td><%= analysis.conclusion %></td>
+        <td><%= link_to 'Show', analysis %></td>
+        <td><%= link_to 'Edit', edit_analysis_path(analysis) %></td>
+        <td><%= link_to 'Destroy', analysis, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Analysis', new_analysis_path %>

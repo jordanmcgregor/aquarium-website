@@ -1,0 +1,268 @@
+/* Gradient colors for overall website
+$gradient-primary: #2e279d
+$gradient-secondary: #46b3e6
+
+#analysis
+  *
+    font-family: 'Open Sans',Arial,sans-serif
+    margin: 0
+
+  a
+    cursor: pointer
+    opacity: 1
+    transition: .3s
+    text-decoration: none
+
+  a:hover
+    opacity: .8
+
+  h1,h2,h3,h4
+    text-align: center
+
+  h1
+    background-image: linear-gradient(130deg,$gradient-primary 0%,$gradient-secondary 100%)
+    padding: 54px
+    text-align: center
+    color: white
+    font-weight: 500
+    line-height: 1.7em
+    margin: 0
+
+  h2
+    font-weight: 500
+
+  h3
+    font-weight: 500
+    text-align: center
+    color: white
+    font-size: 15px
+
+  h4
+    color: #0C71C3
+    font-weight: 500
+    margin-top: 20px
+
+  h5
+    text-align: center
+    font-weight: 500
+    color: white
+    font-size: 20px
+
+  h6
+    font-size: 25px
+    font-weight: 500
+    margin-bottom: 15px
+
+  p
+    color: #666
+    line-height: 1.5em
+
+  section
+    width: 80%
+    max-width: 1080px
+
+  ul
+    list-style-type: none
+
+  li
+    line-height: 2em
+    a
+      text-decoration: none
+      color: #0C71C3 !important
+
+  .black_font
+    color: black
+
+  .round-border-top
+    border-radius: 10px 10px 0 0
+
+
+  .margin-center
+    margin-left: auto
+    margin-right: auto
+
+  .flex
+    display: flex
+
+  .flex50
+    width: 50%
+
+  .space-between
+    justify-content: space-between
+
+  .martop25
+    margin-top: 25px
+
+  .martop50
+    margin-top: 50px
+
+  .martop100
+    margin-top: 100px
+
+  .text-center
+    text-align: center
+
+  .toc-container
+    border: solid 2px #d6d6d6
+    padding: 50px
+
+  .top-three
+    width: 31.333%
+    border-radius: 10px
+
+  .shadow
+    box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.3)
+
+  .editor-rating
+    i
+      font-size: 16px
+      color: #ffd400
+      margin-top: -5px
+
+  .laurel-title-format
+    background-size: contain
+    background-position: center left
+    background-repeat: no-repeat
+    padding-bottom: 1.25em
+    padding-top: 1.25em
+    position: relative
+
+  .great
+    background-image: url('https://aquariuminformer.com/wp-content/uploads/2020/08/white-laurel-leaves-png-png-image-917849.png'), linear-gradient(180deg,#00ba82 0%,#00ca7f 100%)
+
+  .premium
+    background-image: url('https://aquariuminformer.com/wp-content/uploads/2020/08/white-laurel-leaves-png-png-image-917849.png'), linear-gradient(180deg,#6e98d3 0%,#34a6f1 100%)
+
+  .best
+    background-image: url('https://aquariuminformer.com/wp-content/uploads/2020/08/white-laurel-leaves-png-png-image-917849.png'), linear-gradient(180deg,#cfc470 0%,#e1ce80 100%)
+
+  .product-info-container
+    width: 90%
+
+  .top-three-title
+    height: 70px
+
+  .top-three-image
+    padding: 108px 108px 50% 50%
+    background-repeat: no-repeat
+    background-size: contain
+
+
+  .featured-check
+    width: 90%
+    padding-left: 10%
+    padding-top: 10px
+
+  .regular-check
+    width: 80%
+    padding-left: 2em
+    padding-bottom: 10px
+
+
+  .check:before
+    content: "\f00c"
+    font-family: "Font Awesome 5 Free"
+    color: #fff
+    display: inline-block
+    position: absolute
+    margin-left: -30px
+    background-color: #69C589
+    width: 1.6em
+    height: 1.6em
+    line-height: 1.6em
+    text-align: center
+    border-radius: 100%
+    font-size: 13px
+    margin-top: .1em
+    font-weight: 900
+
+  .small-button
+    text-shadow: 0em 0em 0.3em rgba(0,0,0,0.4)
+    background-color: #5588fb
+    color: white
+    text-decoration: none
+    border-radius: 50px
+    display: block
+    font-size: 20px
+    padding: .4em 1em
+
+  .big-button
+    text-shadow: 0em 0em 0.3em rgba(0,0,0,0.4)
+    background-color: #5588fb
+    color: white
+    text-decoration: none
+    border-radius: 5px
+    display: block
+    font-size: 30px
+    padding: .4em 1.3em
+
+  .small-button-container
+    display: flex
+    justify-content: center
+    margin-top: 30px
+    margin-bottom: 30px
+
+  .big-button-container
+    display: flex
+    justify-content: center
+    margin-bottom: 10px
+
+  .product-image
+    max-height: 400px
+    display: block
+    max-width: 100%
+
+  .review-text
+    display: block
+
+  .padbottom50
+    padding-bottom: 50px
+
+  .product-number
+    color: black
+    padding: 1em
+    background: #F7F7F7
+    font-size: 25px
+    border: 1px solid #E6E8EA
+
+
+  @media only screen and (max-width: 800px)
+    h2
+      font-size: 5vw
+    h5
+      font-size: 3.8vw
+
+    ul
+      padding-left: 0
+
+    .indent
+      padding-left: 5vw
+      display: block
+
+    .toc-container
+      padding: 0
+      padding-top: 10vw
+      padding-bottom: 10vw
+
+    .toc-list
+      width: 90%
+
+
+    .flex
+      flex-direction: column
+
+    .flex50
+      width: 100%
+
+    .top-three
+      width: 100%
+      margin-top: 10vw
+
+    .martop50
+      margin-top: 5vw
+
+    .martop100
+      margin-top: 15vw
+
+    .big-button
+      font-size: 6vw

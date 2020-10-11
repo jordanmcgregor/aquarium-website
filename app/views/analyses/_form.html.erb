@@ -1,0 +1,607 @@
+<%= form_with(model: analysis, local: true) do |form| %>
+  <% if analysis.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(analysis.errors.count, "error") %> prohibited this analysis from being saved:</h2>
+
+      <ul>
+        <% analysis.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :seo_title %>
+    <%= form.text_area :seo_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :seo_meta_description %>
+    <%= form.text_area :seo_meta_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :analysis_article_image %>
+    <%= form.text_area :analysis_article_image %>
+  </div>
+
+  <div class="field">
+    <%= form.label :analysis_article_title %>
+    <%= form.text_area :analysis_article_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :introduction %>
+    <%= form.text_area :introduction %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title1 %>
+    <%= form.text_area :title1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image_link1 %>
+    <%= form.text_area :image_link1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :affiliate_link1 %>
+    <%= form.text_area :affiliate_link1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :summary1 %>
+    <%= form.text_area :summary1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight1_1_short %>
+    <%= form.text_area :highlight1_1_short, :maxlength => 35 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight1_2_short %>
+    <%= form.text_area :highlight1_2_short, :maxlength => 35 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight1_3_short %>
+    <%= form.text_area :highlight1_3_short, :maxlength => 35 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight1_1 %>
+    <%= form.text_area :highlight1_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight1_2 %>
+    <%= form.text_area :highlight1_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight1_3 %>
+    <%= form.text_area :highlight1_3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight1_4 %>
+    <%= form.text_area :highlight1_4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight1_5 %>
+    <%= form.text_area :highlight1_5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :synopsis1 %>
+    <%= form.text_area :synopsis1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title2 %>
+    <%= form.text_area :title2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image_link2 %>
+    <%= form.text_area :image_link2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :affiliate_link2 %>
+    <%= form.text_area :affiliate_link2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :summary2 %>
+    <%= form.text_area :summary2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight2_1_short %>
+    <%= form.text_area :highlight2_1_short, :maxlength => 35 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight2_2_short %>
+    <%= form.text_area :highlight2_2_short, :maxlength => 35 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight2_3_short %>
+    <%= form.text_area :highlight2_3_short, :maxlength => 35 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight2_1 %>
+    <%= form.text_area :highlight2_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight2_2 %>
+    <%= form.text_area :highlight2_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight2_3 %>
+    <%= form.text_area :highlight2_3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight2_4 %>
+    <%= form.text_area :highlight2_4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight2_5 %>
+    <%= form.text_area :highlight2_5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :synopsis2 %>
+    <%= form.text_area :synopsis2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title3 %>
+    <%= form.text_area :title3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image_link3 %>
+    <%= form.text_area :image_link3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :affiliate_link3 %>
+    <%= form.text_area :affiliate_link3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :summary3 %>
+    <%= form.text_area :summary3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight3_1_short %>
+    <%= form.text_area :highlight3_1_short, :maxlength => 35 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight3_2_short %>
+    <%= form.text_area :highlight3_2_short, :maxlength => 35 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight3_3_short %>
+    <%= form.text_area :highlight3_3_short, :maxlength => 35 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight3_1 %>
+    <%= form.text_area :highlight3_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight3_2 %>
+    <%= form.text_area :highlight3_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight3_3 %>
+    <%= form.text_area :highlight3_3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight3_4 %>
+    <%= form.text_area :highlight3_4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight3_5 %>
+    <%= form.text_area :highlight3_5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :synopsis3 %>
+    <%= form.text_area :synopsis3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title4 %>
+    <%= form.text_area :title4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image_link4 %>
+    <%= form.text_area :image_link4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :affiliate_link4 %>
+    <%= form.text_area :affiliate_link4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :summary4 %>
+    <%= form.text_area :summary4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight4_1 %>
+    <%= form.text_area :highlight4_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight4_2 %>
+    <%= form.text_area :highlight4_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight4_3 %>
+    <%= form.text_area :highlight4_3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight4_4 %>
+    <%= form.text_area :highlight4_4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight4_5 %>
+    <%= form.text_area :highlight4_5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :synopsis4 %>
+    <%= form.text_area :synopsis4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title5 %>
+    <%= form.text_area :title5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image_link5 %>
+    <%= form.text_area :image_link5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :affiliate_link5 %>
+    <%= form.text_area :affiliate_link5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :summary5 %>
+    <%= form.text_area :summary5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight5_1 %>
+    <%= form.text_area :highlight5_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight5_2 %>
+    <%= form.text_area :highlight5_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight5_3 %>
+    <%= form.text_area :highlight5_3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight5_4 %>
+    <%= form.text_area :highlight5_4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight5_5 %>
+    <%= form.text_area :highlight5_5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :synopsis5 %>
+    <%= form.text_area :synopsis5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title6 %>
+    <%= form.text_area :title6 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image_link6 %>
+    <%= form.text_area :image_link6 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :affiliate_link6 %>
+    <%= form.text_area :affiliate_link6 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :summary6 %>
+    <%= form.text_area :summary6 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight6_1 %>
+    <%= form.text_area :highlight6_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight6_2 %>
+    <%= form.text_area :highlight6_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight6_3 %>
+    <%= form.text_area :highlight6_3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight6_4 %>
+    <%= form.text_area :highlight6_4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight6_5 %>
+    <%= form.text_area :highlight6_5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :synopsis6 %>
+    <%= form.text_area :synopsis6 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title7 %>
+    <%= form.text_area :title7 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image_link7 %>
+    <%= form.text_area :image_link7 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :affiliate_link7 %>
+    <%= form.text_area :affiliate_link7 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :summary7 %>
+    <%= form.text_area :summary7 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight7_1 %>
+    <%= form.text_area :highlight7_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight7_2 %>
+    <%= form.text_area :highlight7_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight7_3 %>
+    <%= form.text_area :highlight7_3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight7_4 %>
+    <%= form.text_area :highlight7_4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight7_5 %>
+    <%= form.text_area :highlight7_5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :synopsis7 %>
+    <%= form.text_area :synopsis7 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title8 %>
+    <%= form.text_area :title8 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image_link8 %>
+    <%= form.text_area :image_link8 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :affiliate_link8 %>
+    <%= form.text_area :affiliate_link8 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :summary8 %>
+    <%= form.text_area :summary8 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight8_1 %>
+    <%= form.text_area :highlight8_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight8_2 %>
+    <%= form.text_area :highlight8_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight8_3 %>
+    <%= form.text_area :highlight8_3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight8_4 %>
+    <%= form.text_area :highlight8_4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight8_5 %>
+    <%= form.text_area :highlight8_5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :synopsis8 %>
+    <%= form.text_area :synopsis8 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title9 %>
+    <%= form.text_area :title9 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image_link9 %>
+    <%= form.text_area :image_link9 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :affiliate_link9 %>
+    <%= form.text_area :affiliate_link9 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :summary9 %>
+    <%= form.text_area :summary9 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight9_1 %>
+    <%= form.text_area :highlight9_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight9_2 %>
+    <%= form.text_area :highlight9_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight9_3 %>
+    <%= form.text_area :highlight9_3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight9_4 %>
+    <%= form.text_area :highlight9_4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight9_5 %>
+    <%= form.text_area :highlight9_5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :synopsis9 %>
+    <%= form.text_area :synopsis9 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title10 %>
+    <%= form.text_area :title10 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image_link10 %>
+    <%= form.text_area :image_link10 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :affiliate_link10 %>
+    <%= form.text_area :affiliate_link10 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :summary10 %>
+    <%= form.text_area :summary10 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight10_1 %>
+    <%= form.text_area :highlight10_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight10_2 %>
+    <%= form.text_area :highlight10_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight10_3 %>
+    <%= form.text_area :highlight10_3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight10_4 %>
+    <%= form.text_area :highlight10_4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highlight10_5 %>
+    <%= form.text_area :highlight10_5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :synopsis10 %>
+    <%= form.text_area :synopsis10 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :buyers_guide %>
+    <%= form.text_area :buyers_guide %>
+  </div>
+
+  <div class="field">
+    <%= form.label :expert_tip %>
+    <%= form.text_area :expert_tip %>
+  </div>
+
+  <div class="field">
+    <%= form.label :did_you_know %>
+    <%= form.text_area :did_you_know %>
+  </div>
+
+  <div class="field">
+    <%= form.label :conclusion %>
+    <%= form.text_area :conclusion %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
