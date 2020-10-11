@@ -22,7 +22,7 @@
     <div class="article-container flex flex-wrap flex-between">
       <% @analyses.each do |analysis| %>
         <a class='article marbot50 margin-center' href="/analyses/<%= analysis.friendly_id %>">
-          <div class="">
+          <div class="article_image">
             <img src="<%= analysis.analysis_article_image %>" alt="">
             <h3 class='text-center'>
               <%= analysis.analysis_article_title %>
