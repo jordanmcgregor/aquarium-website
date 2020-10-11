@@ -1,7 +1,7 @@
 class AnalysesController < ApplicationController
   before_action :set_analysis, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, only: [:edit, :update, :destroy]
-  before_action :authenticate_admin, only: [:edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:new, :edit, :update, :destroy]
+  before_action :authenticate_admin, only: [:new, :edit, :update, :destroy]
 
   def authenticate_admin
     redirect_to '/', alert: 'Not authorized.' unless current_user && access_whitelist
