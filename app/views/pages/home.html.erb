@@ -16,7 +16,8 @@
       <% @analyses.each do |analysis| %>
         <a class='article marbot50 margin-center' href="/analyses/<%= analysis.friendly_id %>">
           <div class="article_image">
-            <img src="<%= analysis.analysis_article_image %>" alt="">
+            <div class='article_background_image' style="background-image: url('<%= analysis.analysis_article_image %>')" alt="">
+            </div>
             <h3 class='text-center'>
               <%= analysis.analysis_article_title %>
             </h3>
